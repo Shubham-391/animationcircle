@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.mh-100 {
+    min-height: 100vh;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.bg {
+    background: linear-gradient(to right, red 0%, orange 50%, yellow 100%);
+}
+
+.circle {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: linear-gradient(to right, yellow 0%, green 100%);
+    animation-name: play;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes play {
+    0% {
+        border-radius: 50%;
+    }
+
+    20% {
+        border-radius: 46% 54% 50% 50% / 50% 66% 34% 50%;
+    }
+
+    40% {
+        border-radius: 80% 20% 78% 22% / 73% 13% 87% 27%;
+    }
+
+    60% {
+        border-radius: 5% 95% 21% 79% / 35% 69% 31% 65%;
+    }
+
+    80% {
+        border-radius: 100% 0% 100% 0% / 0% 100% 0% 100%;
+    }
+
+    100% {
+        border-radius: 50%;
+    }
+}
